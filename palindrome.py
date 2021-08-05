@@ -26,13 +26,12 @@ def palindrome_main():
     gamecont = ["y", "n"]
     while playagain == True:
         pdrome()
-        while playagain == True:
-            newgame = input("Play again (y/n)?: ")
-            if newgame in gamecont and newgame == "n":
-                playagain = False
-            elif newgame in gamecont and newgame == "y":
-                break
-            else:
-                print("Wrong input! Enter 'y' or 'n'.")
+        newgame = input("Play again (y/n)?: ")
+        if newgame in gamecont and newgame == "n":
+            playagain = False
+        elif newgame in gamecont and newgame == "y":
+            continue
+        else:
+            print("Wrong input! Enter 'y' or 'n'.")
         print()
-#main()
+#palindrome_main()
