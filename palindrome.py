@@ -19,7 +19,7 @@ def pdrome():
         else:
             print(f"{is_palindrome(lword)}, ".upper() + word + " is not a palindrome!")
     else:
-        print("input error, type in a word")
+        print("Input error! Type in a word.")
         
 def palindrome_main():
     playagain = True
